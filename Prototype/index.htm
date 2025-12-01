@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SmartQ App</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- ========================================================== -->
+<!-- ======================= LOGIN ============================ -->
+<!-- ========================================================== -->
+<div id="loginPage" class="page active">
+
+    <div class="login-box">
+        <h1 class="logo-title">Smart<span class="Q">Q</span></h1>
+        <p class="subtitle">Login</p>
+
+        <div class="social-row">
+            <a id="googleBtn" class="social-btn">
+                <img src="https://www.gstatic.com/images/branding/product/1x/gsa_64dp.png" class="icon">
+            </a>
+
+            <p class="atau">Atau</p>
+
+            <a id="facebookBtn" class="social-btn">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_(2019).png" class="icon">
+            </a>
+        </div>
+
+        <div class="section-label">Lanjutkan</div>
+
+        <label>Nama Pengguna</label>
+        <input type="text" id="userNameInput">
+
+        <label>Password</label>
+        <input type="password">
+
+        <button id="loginBtn" class="login-btn">LOGIN</button>
+    </div>
+
+</div>
+
+<!-- ========================================================== -->
+<!-- ================= PILIH ROLE ============================= -->
+<!-- ========================================================== -->
+<div id="rolePage" class="page">
+
+    <h2 class="role-title">Login Sebagai</h2>
+
+    <div id="usahaBtn" class="role-card blue">
+        <div class="role-left">
+            <p class="role-header">Pemilik Usaha</p>
+            <img src="https://cdn-icons-png.flaticon.com/512/809/809957.png" class="role-icon">
+        </div>
+        <p class="role-text">Mengatur antrian dengan rapi dan teratur</p>
+    </div>
+
+    <p class="atau-center">Atau</p>
+
+    <div id="pelangganBtn" class="role-card pink">
+        <div class="role-left">
+            <p class="role-header">Pelanggan</p>
+            <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" class="role-icon">
+        </div>
+        <p class="role-text">Atur jadwal antrimu manfaatkan luang waktumu</p>
+    </div>
+
+</div>
+
+<!-- ========================================================== -->
+<!-- ============== LOGIN USAHA (NAMA USAHA) ================== -->
+<!-- ========================================================== -->
+<div id="usahaLoginPage" class="page">
+
+    <div class="login-box">
+        <h2 class="subtitle">Login Usaha</h2>
+
+        <label>Nama Usaha</label>
+        <input type="text" id="namaUsahaInput">
+
+        <label>Kata Sandi</label>
+        <input type="password">
+
+        <button id="masukUsahaBtn" class="login-btn">MASUK</button>
+    </div>
+
+</div>
+
+<!-- ========================================================== -->
+<!-- ============== DASHBOARD USAHA =========================== -->
+<!-- ========================================================== -->
+<div id="usahaDashboardPage" class="page">
+
+    <div class="topbar">
+        <h2 id="namaUsahaLabel">Nama Usaha</h2>
+        <div id="menuUsahaBtn" class="menu-btn">☰</div>
+    </div>
+
+    <div id="menuDropdown" class="dropdown hidden">
+        <p id="profilUsaha">Profil</p>
+        <p id="logoutUsaha">Logout</p>
+    </div>
+
+    <div class="usaha-content">
+        <h3>Dashboard Usaha</h3>
+        <p>Halaman ini sesuai halaman 1 milikmu.</p>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+        <div id="navBerandaUsaha" class="nav-item active">🏠<span>Beranda</span></div>
+        <div id="navLanggananUsaha" class="nav-item">💰<span>Langganan</span></div>
+    </div>
+
+</div>
+
+<!-- ========================================================== -->
+<!-- ============= HALAMAN PELANGGAN (DARI PDF) =============== -->
+<!-- ========================================================== -->
+<div id="pelangganPage" class="page">
+
+    <div class="topbar">
+        <h2>Pelanggan SmartQ</h2>
+        <div id="menuPelangganBtn" class="menu-btn">☰</div>
+    </div>
+
+    <div id="menuDropdownPelanggan" class="dropdown hidden">
+        <p id="profilPelanggan">Profil</p>
+        <p id="logoutPelanggan">Logout</p>
+    </div>
+
+    <div class="pelanggan-content">
+
+        <div class="card-option">📋 Daftar Antrian</div>
+        <div class="card-option">📜 Riwayat</div>
+
+    </div>
+
+    <div class="bottom-nav">
+        <div id="navBerandaPelanggan" class="nav-item active">🏠<span>Beranda</span></div>
+        <div id="navLanggananPelanggan" class="nav-item">💰<span>Langganan</span></div>
+    </div>
+
+</div>
+
+<!-- ========================================================== -->
+<script src="script.js"></script>
+</body>
+</html>
